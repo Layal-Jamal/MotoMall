@@ -1,13 +1,14 @@
 import './Hero.css'
-import { MdOutlineDoubleArrow } from "react-icons/md";
-export default function Hero() {
+export default function Hero({ title }) {
   return (
     <div className='Hero'>
-       <div class="hero-container">
-        <div class="hero-text">
-          <h2>Drive the Future<MdOutlineDoubleArrow /></h2>
-        </div>
-      </div> 
+      <div className='Title'>
+        <h2>{title}</h2>
+        <p>Choose Your Favourite Destination</p>
+      </div>
+      <div className='notice'>
+       <span className='num'>+20</span> types from the best car brands.
+      </div>
     </div>
   )
 }

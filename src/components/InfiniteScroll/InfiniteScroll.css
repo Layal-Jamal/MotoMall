@@ -1,0 +1,55 @@
+
+.infinite-scroll-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+}
+
+.infinite-scroll-track {
+  display: flex;
+  gap: 20px;
+  animation: scroll-cards 30s linear infinite;
+  width: max-content;
+}
+
+.infinite-scroll-card {
+  flex: 0 0 auto;
+  width: 250px;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.infinite-scroll-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content img {
+  width: 120px;
+}
+
+@keyframes scroll-cards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+@media (max-width:768px){
+  .infinite-scroll-card{
+    height: 80px;
+    width: 200px;
+  }
+}

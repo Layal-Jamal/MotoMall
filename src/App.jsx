@@ -11,15 +11,15 @@ import Sign from './Pages/Sign/Sign.jsx';
 function App() {
   return (
     <>
-   <Routes>
-    <Route path='/' element={<Home/>}/>
-    <Route path='/buying' element={<Buying/>}/>
-    <Route path='/rental' element={<Rental/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path='/contact' element={<Contact/>}/>
-    <Route path='/sign' element={<Sign/>}/>
-    
-   </Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/buying' element={<Buying />} />
+        <Route path='/rental' element={<Rental />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/contact' element={<Contact />} />
+        <Route path='/sign' element={<Sign />} />
+
+      </Routes>
     </>
   )
 }
