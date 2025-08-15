@@ -1,0 +1,22 @@
+.ClientCard {
+    width: 300px;
+     background-color: var(--secondary-color);
+     color: var(--text-color);
+}
+
+.stars svg {
+    color: #faa218;
+}
+.clientname{
+    color: var(--orange-color);
+}
+@media (max-width:1036px) {
+    .ClientCard {
+    width: 48%;
+}
+}
+@media (max-width:800px) {
+    .ClientCard {
+        width: 95%;
+    }
+}

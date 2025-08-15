@@ -1,0 +1,45 @@
+.Client {
+    padding: 3rem 4rem;
+    background-color: var(--primary-color);
+}
+
+.Client h2 {
+    font-size: 48px;
+    color: var(--white-color);
+}
+
+.ClientContainer {
+    justify-content: center;
+    gap: 10px;
+    border: var(--border-color) 2px solid;
+    border-radius: 16px;
+    padding: 10px 0;
+}
+
+
+@media (max-width:1036px) {
+    .ClientContainer {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width:992px) {
+    .Client h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:620px) {
+    .Client {
+        padding: 2rem;
+    }
+
+    .Client h2 {
+        font-size: 24px;
+    }
+
+    .Client {
+        font-size: 14px;
+    }
+}

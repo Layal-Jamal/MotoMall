@@ -3,7 +3,7 @@
      top: 20px;
      left: 50%;
      transform: translate(-50%);
-     background-color: #fff;
+     background-color: var(--white-color);
      padding: 0px 30px;
      border-radius: 13px;
      box-shadow: 0 15px 5px 0 rgb(0, 0, 0, .25);
@@ -18,32 +18,35 @@
  .h1-title {
      font-size: 24px;
  }
-.nav a:focus{
-     color: rgba(184, 30, 30, 0.89);
-}
+
+ .nav a:focus {
+     color: var(--orange-color);
+ }
+
  .nav a {
      font-size: 18px;
      display: flex;
      align-items: center;
-     color: black;
+     color: var(--primary-color);
  }
 
  .h1-title:hover {
-     border-bottom: 2px solid black;
+     border-bottom: 2px solid var(--orange-color);
      transition: 0.3s ease;
  }
 
  .nav a:hover {
-     border-bottom: 2px solid rgba(184, 30, 30, 0.89);
+     border-bottom: 2px solid var(--orange-color);
      transition: 0.3s ease;
-     color: rgba(184, 30, 30, 0.89);
+     color: var(--orange-color);
  }
+
  .nav svg {
      margin-right: 6px;
  }
 
  .nav .btn:hover {
-     background-color: rgba(184, 30, 30, 0.89);
+     background-color: var(--orange-color);
      border: none;
  }
 

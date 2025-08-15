@@ -16,14 +16,18 @@
 .Side-1 {
     width: 45%;
     text-align: start;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 12px;
 }
 .Side-1 h3 svg{
-    color: rgba(184, 30, 30, 0.89);
+    color: var(--orange-color);
 }
 .Side-1 h3 {
     padding-bottom: 16px;
-    /* color: #020008; */
     font-weight: 700;
+    color: var(--white-color);
 }
 
 .Side-1 p {

@@ -1,0 +1,39 @@
+.NumberCard {
+  text-align: center;
+  border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: var(--orange-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px 16px;
+  border-radius: 12px;
+  width: 18%;
+}
+
+.title {
+  color: var(--text-color);
+}
+
+@media(max-width:1200px) {
+  .NumberCard {
+    width: 48%;
+  }
+}
+
+@media(max-width:1440px) {
+  .title {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .num {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+}
+
+@media(max-width:500px) {
+  .NumberCard {
+    width: 100%;
+  }
+}

@@ -1,13 +1,13 @@
 .ServiceSection {
     width: 100%;
     text-align: center;
-    color: #2a2a2a;
+    background-color: var( --primary-color);
     padding: 3rem 4rem;
 }
 
 .ServiceSection h2 {
     font-size: 48px;
-    color: rgba(184, 30, 30, 0.89);
+    color: var(--white-color);
 }
 .ServiceSection .Description{
     font-size: 15px;
@@ -21,7 +21,7 @@
 
 @media (max-width:620px) {
     .ServiceSection {
-        padding: 2rem 4rem;
+        padding: 2rem;
     }
 
     .ServiceSection h2 {
@@ -30,11 +30,5 @@
 
     .ServiceSection .Description {
         font-size: 14px;
-    }
-}
-
-@media (max-width:620px) {
-    .ServiceSection {
-        padding: 2rem 4rem;
     }
 }

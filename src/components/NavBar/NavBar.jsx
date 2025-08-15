@@ -20,7 +20,7 @@ export default function NavBar() {
                     <Link to={"/"} className='text-decoration-none my-2 mx-3'><FaHome />Home</Link>
                     <Link to={"/buying"} className='text-decoration-none my-2 mx-3'><FaCarSide />Buying</Link>
                     <Link to={"/rental"} className='text-decoration-none my-2 mx-3'><IoDocumentTextSharp />Rental</Link>
-                    <Link to={"/about"} className='text-decoration-none my-2 mx-3'> <IoIosInformationCircle />About Us</Link>
+                    <Link to={"/about"} className='text-decoration-none my-2 mx-3'> <IoIosInformationCircle />About</Link>
                     <Link to={"/contact"} className='text-decoration-none my-2  mx-3'><RiContactsBook2Fill />Contact</Link>
                     <Link to={"/sign"} className='text-decoration-none'><Button variant="outline-dark my-2 mx-3">Sign In</Button></Link>
                 </Nav>
