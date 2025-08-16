@@ -1,4 +1,5 @@
 
+import ChooseClient from '../../components/Chooseclient/ChooseClient'
 import Hero from '../../components/Hero/Hero'
 import InfiniteScroll from '../../components/InfiniteScroll/InfiniteScroll'
 import NavBar from '../../components/NavBar/NavBar'
@@ -13,6 +14,7 @@ export default function Home() {
       <InfiniteScroll />
       <NumbersSection/>
       <ServiceSection/>
+      <ChooseClient />
     </div>
   )
 }
