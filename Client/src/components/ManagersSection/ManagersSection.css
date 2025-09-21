@@ -1,0 +1,44 @@
+ .Managerscards {
+   background-color: var(--primary-color);
+   text-align: center;
+   width: 100%;
+    padding: 3rem 4rem;
+ }
+ .ManagersCardsContainer {
+   border: var(--border-color) 2px solid;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 10px;
+   gap: 12px;
+   border-radius: 16px;
+   margin-top: 72px;
+   flex-wrap: wrap;
+ }
+
+.gold {
+  width: 60px;
+}
+ .Managerscards h2 {
+   font-size: 48px;
+   color: var(--white-color);
+ }
+
+ @media (max-width:992px) {
+   .Managerscards h2 {
+     font-size: 30px;
+   }
+ }
+
+ @media (max-width:620px) {
+   .Managerscards {
+     padding: 2rem;
+   }
+ }
+
+ @media(max-width:1200px) {
+   .ManagersCardsContainer {
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+ }

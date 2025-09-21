@@ -1,0 +1,125 @@
+.car-details-container {
+    padding: 3rem 2rem;
+    background-color: var(--primary-color);
+    min-height: 100vh;
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: var(--border-color);
+    transform: translateX(-5px);
+}
+
+.car-details {
+    border-radius: 20px;
+    border: 4px solid var(--border-color);
+    width: 40%;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    margin: 0 auto;
+
+}
+
+.header-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid var(--border-color);
+    margin-bottom: 5px;
+    color: var(--white-color);
+}
+
+.car-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.car-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.car-location {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: red;
+    margin: 5px 0;
+}
+
+.car-category {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.car-info {
+    border-top: 4px solid var(--border-color);
+}
+
+.car-model-view {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: lightskyblue;
+}
+
+.car-model {
+    color: var(--white-color);
+    font-weight: bold;
+}
+
+.description-car {
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.price {
+    color: lightgreen;
+}
+
+.contact-price-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.phone-number {
+    color: var(--white-color);
+}
+
+.contact-details {
+    color: lightskyblue;
+}
+
+.load-div, .error-div {
+    text-align: center;
+    padding: 2rem;
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+@media (max-width : 450px) {
+    .car-details {
+        width: auto ;
+        margin-top: 20px;
+        overflow-wrap: break-word;
+    }
+}

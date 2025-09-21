@@ -1,0 +1,32 @@
+.Shopping-view {
+    background-color: var(--primary-color);
+    padding: 100px 2rem ;
+    height: 100%;
+}
+.header-shop h1 {
+    font-size: 50px;
+    color: var(--white-color);
+    font-weight: bold;
+    letter-spacing: 2px;
+
+}
+.img-star {
+    width: 100px;
+    height: 80px;
+}
+.header-shop {
+    text-align: center;
+}
+.view {
+    border: 3px solid var(--border-color);
+    
+}
+
+
+
+@media (max-width : 450px) {
+    .header-shop h1 {
+        font-size: 25px;
+    }
+    
+}

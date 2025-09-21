@@ -1,0 +1,85 @@
+ .StorySection {
+     padding: 3rem 4rem;
+     background-color: var( --primary-color);
+ }
+
+ .StoryItem {
+     border: 2px solid var(--border-color);
+     border-radius: 16px;
+     padding: 10px;
+ }
+
+ .story-title h2 {
+     font-size: 48px;
+     color: var(--white-color);
+ }
+
+ .carsset img {
+     border-radius: 12px;
+ }
+
+ .gold {
+     width: 80px;
+ }
+
+ .StorySection .StoryText {
+     padding: 10px 20px;
+     font-size: 18px;
+     color: var(--text-color);
+     background-color: var(--secondary-color);
+     border-radius: 12px;
+     line-height: 2;
+     position: relative;
+ }
+
+ .StorySection .StoryText span {
+     color: var(--orange-color);
+     font-size: 30px;
+     font-weight: 600;
+ }
+
+ .StoryText svg {
+     color: var(--orange-color);
+ }
+
+ @media (max-width:1025) {
+     .carset-group {
+         flex-direction: row;
+     }
+ }
+
+ @media (max-width: 992px) {
+     .StorySection h2 {
+         font-size: 30px;
+     }
+
+     .StorySection .StoryText {
+         font-size: 16px;
+     }
+ }
+
+ @media (max-width:722px) {
+     .carset-group {
+         flex-wrap: wrap;
+         width: 100% !important;
+     }
+ }
+
+ @media (max-width:620px) {
+     .StorySection {
+         padding: 2rem;
+     }
+
+     .StorySection .StoryText span {
+        font-size: 26px;
+     }
+
+     .story-title h2 {
+         font-size: 24px;
+     }
+
+     .StorySection .StoryText {
+         font-size: 14px;
+         line-height: 1.8;
+     }
+ }

@@ -1,0 +1,15 @@
+.button-container{
+    position: relative;
+}
+.Add-Button {
+    border: 2px solid var(--border-color);
+    padding: 20px 10px;
+    background-color: var(--orange-color);
+    color: var(--secondary-color);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 1008;
+    bottom: 50px;
+    right: 30px;
+
+}

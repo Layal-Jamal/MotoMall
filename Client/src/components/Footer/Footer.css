@@ -1,0 +1,39 @@
+.footerRow {
+    background-color: var(--primary-color);
+    border: var(--border-color) 2px solid;
+    text-align: center;
+    width: 100%;
+    padding: 3rem 4rem 1rem;
+}
+.footerCol{
+    color: var(--text-color);
+    padding: 50px 10px;
+}
+ .footerContainer {
+     background-color: var(--secondary-color);
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   padding: 30px;
+   gap: 12px;
+   border-radius: 16px;
+   margin-top: 72px;
+   flex-wrap: wrap;
+ }
+ .footerCol h4 svg{
+    color: var( --orange-color);
+ }
+ .footerCol a svg{
+    color: var(--white-color);
+ }
+ .copyrights{
+     background-color: var(--primary-color);
+     color: var( --orange-color);
+     padding: 20px 10px 0;
+ }
+
+ @media (max-width: 620px) {
+  .footerRow{
+    padding: 2rem;
+  }
+}
