@@ -14,6 +14,10 @@ const productSchema = new mongoose.Schema(
       required: true,
       lowercase: true,
     },
+    forRent: {
+      type: Boolean,
+      default: false,
+    },
     description: {
       type: String,
       required: [true, 'Product description is required'],
@@ -37,7 +41,6 @@ const productSchema = new mongoose.Schema(
       type: Number,
     },
     colors: [String],
-
     imageCover: {
       type: String,
       required: [true, 'Product Image cover is required'],
@@ -58,6 +61,12 @@ const productSchema = new mongoose.Schema(
       type: mongoose.Schema.ObjectId,
       ref: 'Brand',
     },
+  
+    user: {
+      type: mongoose.Schema.ObjectId,
+      ref: 'User',
+      required: [true, 'Product must belong to a user'], 
+    },
     ratingsAverage: {
       type: Number,
       min: [1, 'Rating must be above or equal 1.0'],
@@ -67,6 +76,7 @@ const productSchema = new mongoose.Schema(
       type: Number,
       default: 0,
     },
+    
   },
   { timestamps: true }
 );
@@ -76,6 +86,9 @@ productSchema.pre(/^find/, function (next) {
   this.populate({
     path: 'category',
     select: 'name -_id',
+  }).populate({
+    path: 'user', 
+    select: 'name _id phone', 
   });
   next();
 });
@@ -94,6 +107,7 @@ const setImageURL = (doc) => {
     doc.images = imagesList;
   }
 };
+
 // findOne, findAll and update
 productSchema.post('init', (doc) => {
   setImageURL(doc);

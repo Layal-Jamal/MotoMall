@@ -1,0 +1,27 @@
+.ManagerCard {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    width: 32%;
+    padding: 20px 10px;
+}
+
+.Managername {
+    color: var(--orange-color);
+    
+}
+.managersicon svg{
+    color: var(--orange-color);
+    font-size: 20px;
+}
+
+@media (max-width:1036px) {
+    .ManagerCard {
+        width: 48%;
+    }
+}
+
+@media (max-width:800px) {
+    .ManagerCard {
+        width: 95%;
+    }
+}

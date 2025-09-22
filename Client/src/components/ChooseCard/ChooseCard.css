@@ -1,0 +1,128 @@
+.choose-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #2a2a2a 100%);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+    position: relative;
+    overflow: hidden;
+}
+
+.choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.choose-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent 0%, rgba(218, 158, 139, 0.1) 100%);
+    z-index: 0;
+}
+
+.choose-content {
+    flex: 1;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.choose-title {
+    color: var(--white-color);
+    font-size: 28px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.choose-description {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.choose-button {
+    background-color: var(--orange-color);
+    color: var(--primary-color);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(218, 158, 139, 0.3);
+}
+
+.choose-button:hover {
+    background-color: #c98a75;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(218, 158, 139, 0.4);
+}
+
+.choose-card-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.choose-card-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transition: transform 0.5s ease;
+}
+
+.choose-card:hover .choose-card-image img {
+    transform: scale(1.05);
+}
+
+.choose-card-image-mobile {
+    display: none;
+}
+
+/* أنماط للهواتف */
+@media (max-width: 768px) {
+    .choose-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .choose-card-image {
+        display: none;
+    }
+    
+    .choose-card-image-mobile {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .choose-card-image-mobile img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+    .choose-title {
+        font-size: 24px;
+    }
+    
+    .choose-description {
+        font-size: 14px;
+    }
+}

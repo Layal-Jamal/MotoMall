@@ -1,0 +1,11 @@
+.ChooseClient {
+    padding: 3rem 4rem;
+    
+    background-color: var(--primary-color);
+}
+@media (max-width: 620px) {
+    .ChooseClient {
+        padding: 2rem;
+    }
+    
+}

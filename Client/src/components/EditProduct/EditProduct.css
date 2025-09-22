@@ -1,0 +1,140 @@
+body {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+.edit-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: var(--secondary-color);
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-title {
+  color: var(--white-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-form label {
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+.edit-form input,
+.edit-form textarea,
+.edit-form select {
+  padding: 10px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--white-color);
+  font-size: 1rem;
+}
+
+.edit-form input:focus,
+.edit-form textarea:focus,
+.edit-form select:focus {
+  outline: none;
+  border-color: var(--orange-color);
+}
+
+.edit-btn {
+  padding: 10px;
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 4px;
+  color: var(--primary-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #c98a75;
+}
+
+.image-preview {
+  margin-bottom: 10px;
+}
+
+.image-preview img {
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.images-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.images-preview img {
+  border-radius: 4px;
+  border: 1px solid var(--border-color);
+}
+
+.loading-text {
+  text-align: center;
+  color: var(--white-color);
+  font-size: 1.1rem;
+  margin-top: 50px;
+}
+
+.edit-form select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20width%3D%2210%22%20height%3D%227%22%20viewBox%3D%220%200%2010%207%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M1%201L5%205L9%201%22%20stroke%3D%22white%22%20stroke-width%3D%222%22/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.back-btn {
+  padding: 10px 16px;
+  background-color: transparent;
+  border: 2px solid var(--orange-color);
+  border-radius: 4px;
+  color: var(--orange-color);
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  left: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: var(--orange-color);
+  color: var(--primary-color);
+}
+
+.edit-btn {
+  flex: 1;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .back-btn,
+  .edit-btn {
+    width: 100%;
+  }
+}
